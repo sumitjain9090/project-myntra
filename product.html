@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Product Page</h1>
+    <div class="navbar">
+        <div>
+            <a href="index.html">Home</a>
+        </div>
+        <div>
+            <a href="product.html">Product</a>
+        </div>
+        <div>
+            <a href="cart.html">Cart</a>
+        </div>
+        <div>
+            <a href="signup.html">Sign Up</a>
+        </div>
+        <div>
+            <a href="index.html">Login</a>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!-- Features -->
+    <div>
+        <select id="sort">
+            <!-- <input type="text" placeholder="Sort by:Recommended"> -->
+            <option value="SbyR" class=> &nbsp; &nbsp;sort: by Recommended</option>
+            <option value="Customer Rating" onclick="sortRateHighToLow()">&nbsp; &nbsp;Customer Rating</option>
+            <option value="Price: Low to High" onclick="sortPriceLowToHigh()">&nbsp; &nbsp;Price: Low to High</option>
+            <option value="Price: High to Low" onclick="sortPriceHighToLow()">&nbsp; &nbsp;Price: High to Low</option>
+            <option value="what's New" onclick="sortWhatsNew()">&nbsp; &nbsp;What's New</option>
+            <option value="Popularity" onclick="sortPopularity()">&nbsp; &nbsp;Popularity</option>
+            <option value="Better Discount" onclick="sortBetterDiscount()">&nbsp; &nbsp;Better Discount</option>
+        </select>
+    </div>
+    <!-- Display Data -->
+    <div id="products"></div>
+</body>
+
+</html>
+<script src="./script_product.js"></script>
